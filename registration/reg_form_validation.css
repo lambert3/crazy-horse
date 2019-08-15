@@ -74,6 +74,7 @@ to push it away from the textboxes of gender and language on their left*/
 
 /* styling the submit button*/
 button {
+<<<<<<< HEAD
   text-align: left;
   width: 60px;
   padding: 5px 5px;
@@ -87,6 +88,21 @@ button {
   color: #fff;
   border: none;
   line-height: 25px;
+=======
+	text-align: center;
+	width: 100px;
+	padding: 5px 5px;
+	/*border-radius: 50px;*/
+	margin: 20px 225px;
+	font-size: 15px;
+	/*font-weight: bold;*/
+	font-family: Verdana;
+	cursor: pointer;
+	background-color: #1766ee;
+	color: #fff;
+	border: none;
+	line-height: 25px;
+>>>>>>> 49e15bc0e3f3a0fe77e3b8645e24af953fd68256
 }
 
 /* changing the background colour and border colour

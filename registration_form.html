@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+ <link rel="stylesheet" type="text/css" href="registration_form.css">
+ 
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Registration Form</h1>    
+        <form action="#">
+        <div class="space">
+                <label for="userId" >User Id:</label>
+                <input type="text" id="userId" name="UserId" value="" placeholder="">
+        </div>
+            
+
+        <div class="space">
+            <label for="Password" >Password: </label>
+            <input type="password" id="Password" name="password" value="" placeholder="Create password">
+        </div>
+
+        <div class="space">
+            <label for="name" >Name:</label>
+            <input type="text" id="name" name="name" value="" placeholder="name">
+        </div>
+
+        <div class="space">
+            <label for="address">Address: </label>
+            <input type="text" id="address" name="address" value="" placeholder="Address">
+        </div>
+
+        <div class="space">
+            <label for="Country">County:</label>
+            <select id="country">
+                <option selected>Choose a Country </option>
+                <option>Uganda</option>
+                <option>Kenya</option>
+                <option>Rwanda</option>
+                <option>Tanzania</option>
+                <option>Congo</option>
+            </select>
+        </div>
+
+        <div class="space">
+            <label for="zip">ZIP Code:</label>
+            <input type="text" id="zip" name="Zip Code" value="" placeholder="256">
+        </div>
+
+        <div class="space">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="Email" value="" placeholder="enter emmail">
+        </div>
+
+        <div class="space">
+            <label>Sex:</label>
+            <input type="radio" name="Sex" value="Male"  ><lable>Male</lable>
+            <input type="radio" name="Sex" value="Female" checked ><label id="female">Female</label>
+        </div>
+
+        <div class="space">
+             <label>Language: </label>
+             <input type="checkbox" name="language" value="English" checked > <label id="female">English</label>
+             <input type="checkbox" name="language" value="Non English"> <label  id="non">Non English</label>
+        </div>
+
+        <div class="space">
+            <label for="about">About: </label>
+            <textarea id="about" cols="30" rows="10"></textarea>
+        </div>
+
+        <button id="subutton" onclick="validation()">submit</button>
+
+        </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+    <script src="registration_form.js"></script>
+</body>
+
+</html>
