@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+
+<body>
+
+    <!-- the main body starts -->
+    <div class="container">
+
+        <div>
+            <h1>registration</h1>
+        </div>
+
+
+        <!-- the form starts -->
+        <form id="the-form">
+
+            <!-- the user id starts-->
+            <div class="user-id">
+                <label for="">User id:</label>
+                <input type="text" name="" id="user-id" required>
+            </div>
+            <!-- the user id ends-->
+
+            <!-- the password starts -->
+            <div class="password">
+                <label for="">Password:</label>
+                <input type="password" id="password" required>
+            </div>
+            <!-- the password ends -->
+
+            <!-- the name starts-->
+            <div class="name">
+                <label for="">Name:</label>
+                <input type="text" id="name" required>
+            </div>
+            <!-- the name ends-->
+
+            <!-- the address starts-->
+            <div class="address">
+                <label for="">Address:</label>
+                <input type="text">
+            </div>
+            <!-- the address ends-->
+
+            <!-- the countries start-->
+            <div class="country">
+                <label for="">Country:</label>
+                <select id="countries" required>
+
+                    <option value="" selected>(Please select a country) </option>
+                    <option value="Uganda">Uganda</option>
+                    <option value="Kenya">Kenya</option>
+                    <option value="Tanzania">Tanzania</option>
+                    <option value="Mexico">Mexico</option>
+                    <option value="Colombia">Colombia</option>
+
+                </select>
+            </div>
+            <!-- the countries end-->
+
+            <!-- the zip code starts -->
+            <div class="zip-code">
+                <label for="">Zip Code:</label>
+                <input type="text" id="zip-code">
+            </div>
+            <!-- the zip code ends-->
+
+            <!-- the email starts-->
+            <div class="email">
+                <label for="">Email:</label>
+                <input type="email" id="email" required>
+            </div>
+            <!-- the email ends-->
+
+            <!-- the radio buttons start -->
+            <div class="radios">
+
+                <label for="">Sex:</label>
+
+                <label for="" class="radio-button">
+                    <input type="radio" name="gender" value="Male" id="male" required>Male
+                </label>
+
+                <label for="" class="radio-button">
+                    <input type="radio" name="gender" value="Female" id="female">Female
+                </label>
+
+            </div>
+            <!-- the radio buttons end-->
+
+            <!-- the check boxes start-->
+            <div class="check">
+
+                <label for="">Language:</label>
+
+                English
+                <input type="checkbox" name="language" value="english" id="english">
+
+                Non English
+                <input type="checkbox" name="language" value="non english" id="non-english">
+
+            </div>
+            <!-- the check boxes end-->
+
+            <!-- the text area starts -->
+            <div class="text-area">
+                <label for="text-area">About:</label>
+                <textarea name="text-area" id="text-area" cols="33" rows="5" placeholder="description...">
+                            </textarea>
+            </div>
+            <!-- the text area ends -->
+
+            <!-- the submit button starts-->
+            <div class="submitting">
+                <input type="submit" name="" value="Submit" id="btn-submit">
+            </div>
+            <!-- the submit button ends -->
+
+        </form>
+        <!-- the form ends -->
+
+    </div>
+    <!-- the main body ends -->
+    <script src="registration.js"></script>
+</body>
+
+</html>
