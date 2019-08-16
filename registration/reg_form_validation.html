@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- The title that appears on the title bar of the tab of the web browser -->
+    <title>Registration Form</title>
+
+    <!-- linking the external css file -->
+    <link rel = "stylesheet" href="reg_form_validation.css">
+</head>
+
+<!-- the body begins/  -->
+<body>
+	<!-- parent div -->
+	<div>
+	<!-- form for registration -->
+		<form id="main-form">
+		<h2>Registration Form</h2>
+		<!-- table to organise all the labels and input fields accordingly.
+			 from the start to close of the table tag labels and input fields are organised to make the form
+		  -->
+		<table>
+			<!-- tr to create rows and td to create columns and fill and populate the table  -->
+			<tr>
+				<td><label class="labels" for="user_id">User id:</label></td>
+				<td><input id="user_id" type="text" class="credential">
+				<!-- this element in all the (tds) is used to display a warning message once the validation is done using javascript -->
+				<small class="warningMessage"></small></td>
+			</tr>
+			
+			<tr>
+				<td><label class="labels" for="password">Password:</label></td>
+				<td><input id="password" type="password" class="credential"><small class="warningMessage"></small></td>	
+			</tr>
+
+			<tr>
+				<td><label class="labels" for="name">Name:</label></td>
+				<td><input id="name" type="text" class="name-adress"><small class="warningMessage"></small></td>
+			</tr>
+			
+			<!-- <tr>
+				<td><label class="labels" for="address">Address:</label></td>
+				<td><input id="address" type="text" class="name-adress"></td>
+			</tr> -->
+
+			<tr>
+				<td><label class="labels" for="country">Country:</label></td>
+				<td>
+					<select id="country">
+						<option id="optionCountry">
+							(Please select a country)
+						</option>
+						<option>Egypt</option>
+						<option>Uganda</option>
+						<option>Canada</option>
+						<option>Burma</option>
+						<option>India</option>
+					</select>
+					<small class="warningMessage"></small>
+				</td>
+			</tr>
+
+			<tr>
+				<td><label class="labels" for="zip">ZIP Code:</label></td>
+				<td><input id="zip" type="text"><small class="warningMessage"></small></td>
+			</tr>
+
+			<tr>
+				<td><label class="labels" for="email">Email:</label></td>
+				<td><input id="email" type="email"><small class="warningMessage"></small></td>
+			</tr>
+
+			<tr>
+				<td><label class="labels" for="">Sex:</label></td>
+				<td>
+					<input type="radio" id="male" name="gender" value="Male"><label for="male">Male</label>
+					<input type="radio" id="female" name="gender" value="Female"><label for="female">Female</label>
+					<small class="warningMessage"></small>
+				</td>
+			</tr>
+
+			<tr>
+				<td><label class="labels" for="">Language:</label></td>
+				<td>
+					<input id="english" type="checkbox" value="English"><label for="english">English</label>
+					<input id="non-english" type="checkbox" value="Non English"><label for="non-english">Non English</label>
+					<small class="warningMessage"></small>
+				</td>
+			</tr>
+
+			<tr>
+				<td><label class="labels" for="">About:</label></td>
+				<td><textarea id="textarea" rows="5" cols="45" placeholder="Type text here....."></textarea></br></td>
+			</tr>
+			<!-- end of table -->
+		</table>
+			<!-- button for submitting the form -->
+			<button type="submit">Submit</button></br>
+		</form>
+	<!-- closing the parent div tag -->
+	</div>
+
+	<!-- linking the external javascript file -->
+	<script src="reg_validate.js"></script>
+<!-- end of body tag -->
+</body>
+<!-- closing the html tage/end of html file -->
+</html>
